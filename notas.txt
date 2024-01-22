@@ -1,0 +1,2 @@
+token git: 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
+user: emkrougdevops
