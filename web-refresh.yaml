@@ -1,0 +1,9 @@
+---
+- name: Ejecutar script JS cada 5 segundos
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Ejecutar script JS repetidamente
+      shell: node /home/elias/Documents/project/javascript/web-refresh/web-refresh_Ansible.js
+      with_sequence: start=1 end=120
+      delay: 10
